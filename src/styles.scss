@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+.visually-hidden-focusable {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.visually-hidden-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 0.25rem;
+  z-index: 1000;
+}
+
+/* O en src/app/layout/layout.scss o en src/styles.scss */
+main {
+  padding-top: 4.5rem; /* ~altura de la navbar */
+}
