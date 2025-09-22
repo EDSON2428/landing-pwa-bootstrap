@@ -1,0 +1,52 @@
+<main id="main" class="container py-5" role="main" aria-labelledby="ui-title">
+  <h1 id="ui-title" class="mb-4">UI Showcase</h1>
+
+  <!-- 1) Navbar ejemplo -->
+  <section class="mb-5" aria-labelledby="nav-ex-title">
+    <h2 id="nav-ex-title" class="h4">Navbar</h2>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Demo navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#demoNav">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Toggle navigation</span>
+        </button>
+        <div id="demoNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- 2) Grid / Cards -->
+  <section class="mb-5" aria-labelledby="cards-title">
+    <h2 id="cards-title" class="h4">Grid & Cards</h2>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4" *ngFor="let i of [1,2,3]">
+        <div class="card h-100">
+          <img src="assets/img/demo-image-0{{i}}.jpg" class="card-img-top" alt="Demo image {{i}}">
+          <div class="card-body">
+            <h3 class="h5 card-title">Card {{i}}</h3>
+            <p class="card-text">Texto de ejemplo responsivo con Bootstrap.</p>
+            <button class="btn btn-primary">Acción</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) Botones -->
+  <section aria-labelledby="buttons-title">
+    <h2 id="buttons-title" class="h4">Buttons</h2>
+    <div class="d-flex flex-wrap gap-2">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-outline-dark">Outline</button>
+    </div>
+  </section>
+</main>
+
